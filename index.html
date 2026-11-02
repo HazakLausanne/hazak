@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hazak Lausanne · Live your Jewish identity</title>
+<meta name="description" content="Hazak Lausanne - Vaud : cours de Torah, fêtes, activités et services pour les étudiants et jeunes professionnels juifs de Lausanne, dans l'esprit de Chabad.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f8fb; --paper:#ffffff; --ink:#0f2440; --muted:#4f6079; --line:#dbe3ee;
+  --navy:#173a6b; --navy-2:#0f2a50; --sky:#3fa3dc; --sky-soft:#e5f3fb; --gold:#e3a72f;
+  --head:"Frank Ruhl Libre",Georgia,serif; --body:Figtree,system-ui,sans-serif; --wrap:1140px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--head);font-weight:700;line-height:1.1;text-wrap:balance}
+.wrap{width:min(var(--wrap),100% - 40px);margin:0 auto}
+.label{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sky);font-weight:700}
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:58px;height:58px;object-fit:contain}
+.brand b{font-family:var(--head);font-size:1.45rem;letter-spacing:.06em;color:var(--navy);line-height:1}
+.brand small{display:block;font-size:.66rem;letter-spacing:.2em;color:var(--sky);font-weight:700}
+.menu{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-items:center}
+.menu a{text-decoration:none;font-weight:500;color:var(--muted)}
+.menu a:hover{color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;background:var(--navy);color:#fff !important;font-weight:700;text-decoration:none;border:1.5px solid var(--navy)}
+.btn:hover{background:var(--navy-2)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:var(--ink) !important}
+.btn.line{background:transparent;border-color:currentColor;color:inherit !important}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;font-size:20px;color:var(--navy)}
+.hero{background:linear-gradient(160deg,var(--navy-2),var(--navy) 60%,#1f5a96);color:#fff;padding:70px 0 80px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--bg);clip-path:polygon(0 100%,0 70%,14% 30%,24% 58%,38% 8%,52% 52%,63% 28%,78% 62%,88% 36%,100% 70%,100% 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:46px;align-items:center;position:relative;z-index:1}
+.hero .label{color:#9fd3f2}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.2rem);margin:14px 0 20px;font-weight:900}
+.hero p{color:#d5e2f2;font-size:1.12rem;max-width:56ch;margin:0 0 14px}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.verse{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:28px 26px;text-align:center}
+.verse .he{font-family:var(--head);font-size:1.7rem;line-height:1.4;direction:rtl;color:#fff}
+.verse .fr{font-family:var(--head);font-size:1.15rem;font-style:italic;color:#d5e2f2;margin:14px 0 8px}
+.verse small{color:#9fd3f2;letter-spacing:.08em}
+section{padding:84px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(2.1rem,4.6vw,3.4rem);margin-top:10px;color:var(--navy)}
+.sec-head p{max-width:48ch;margin:0;color:var(--muted)}
+.about .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:30px 32px}
+.panel h3{font-size:1.6rem;color:var(--navy);margin-bottom:12px}
+.panel p{margin:0 0 12px}
+.panel .lang{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--sky);border:1px solid var(--sky);border-radius:999px;padding:2px 9px;margin-bottom:10px}
+.students{background:var(--sky-soft)}
+.quote{font-family:var(--head);font-size:clamp(1.4rem,2.6vw,1.9rem);color:var(--navy);max-width:34ch;margin:0 0 30px;line-height:1.3}
+.srv{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.srv .card{background:var(--paper);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line)}
+.srv .k{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
+.srv h3{font-size:1.4rem;color:var(--navy)}
+.srv p{margin:0;color:var(--muted);font-size:1rem}
+.srv .em{margin-top:auto;font-weight:700;color:var(--navy);font-size:.95rem}
+.togo{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.togo .card{background:var(--navy);color:#e3ecf7;border-radius:20px;padding:22px;display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:center}
+.togo img{width:84px;height:84px;object-fit:contain;border-radius:14px;background:#000}
+.togo h3{color:#fff;font-size:1.3rem}
+.togo p{margin:4px 0 0;font-size:.98rem}
+.torah .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}
+.torah .pics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.torah .pics img{width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(15,36,64,.12)}
+.torah .academy{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.torah .academy img{width:110px;border-radius:14px;background:#000}
+.torah h2{font-size:clamp(2.1rem,4.6vw,3.4rem);color:var(--navy);margin:8px 0 16px}
+.events{background:var(--paper)}
+.flyers{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.flyers figure{margin:0}
+.flyers img{width:100%;aspect-ratio:1139/1600;object-fit:cover;border-radius:12px;box-shadow:0 6px 18px rgba(15,36,64,.12);transition:transform .2s}
+.flyers img:hover{transform:translateY(-4px) rotate(-.6deg)}
+.flyers figcaption{font-size:.8rem;color:var(--muted);margin-top:8px;line-height:1.35}
+.rabbi .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.letter{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:32px 34px;position:relative}
+.letter h3{font-size:1.9rem;color:var(--navy)}
+.letter .from{color:var(--sky);font-weight:700;font-size:.92rem;margin:4px 0 16px}
+.letter p{margin:0 0 14px}
+.letter details summary{cursor:pointer;font-weight:700;color:var(--navy);margin-bottom:12px}
+.letter .sig{font-family:var(--head);font-size:1.15rem;color:var(--navy)}
+.matzah{float:right;width:130px;margin:0 0 10px 18px;border-radius:12px}
+.posts{display:grid;gap:14px}
+.post{background:var(--sky-soft);border-radius:18px;padding:20px 22px}
+.post h4{margin:0 0 6px;font-family:var(--head);font-size:1.2rem;color:var(--navy)}
+.post p{margin:0;color:var(--muted);font-size:.98rem}
+.post small{display:block;margin-top:8px;font-size:.8rem;color:var(--sky);font-weight:700}
+.give{background:linear-gradient(160deg,var(--navy-2),var(--navy));color:#e3ecf7}
+.give .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.give h2{color:#fff;font-size:clamp(2.1rem,4.6vw,3.4rem);margin:10px 0 16px}
+.give .label{color:#9fd3f2}
+.give p{margin:0 0 12px}
+.bank{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:26px 28px;display:grid;gap:14px}
+.bank div{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:12px}
+.bank div:last-child{border:0;padding:0}
+.bank b{font-size:.74rem;letter-spacing:.16em;color:#9fd3f2;text-transform:uppercase}
+.bank span{font-family:ui-monospace,Menlo,monospace;color:#fff;font-size:1.02rem}
+.contact .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.contact .card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px}
+.contact .card b{display:block;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);margin-bottom:10px}
+.contact .card p{margin:0 0 6px}
+footer{background:var(--navy-2);color:#9fb3cc;padding:28px 0;font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+.foot p{margin:0}
+.credit a{color:#F5C400;text-decoration:none}
+@media (max-width:960px){
+  .hero .wrap,.about .grid,.torah .grid,.rabbi .grid,.give .grid{grid-template-columns:1fr}
+  .srv{grid-template-columns:1fr 1fr}
+  .togo,.contact .grid{grid-template-columns:1fr}
+  .flyers{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:760px){
+  .wrap{width:min(var(--wrap),100% - 32px)}
+  .menu{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:18px 16px 24px;gap:16px;border-bottom:1px solid var(--line)}
+  .menu.open{display:flex}
+  .burger{display:block}
+  section{padding:58px 0}
+  .hero{padding:44px 0 70px}
+  .srv{grid-template-columns:1fr}
+  .flyers{grid-template-columns:1fr 1fr}
+  .panel,.letter{padding:24px 22px}
+  .matzah{width:100px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="Logo Hazak Lausanne - Vaud"><span><b>HAZAK</b><small>LAUSANNE · VAUD</small></span></a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#students">Students</a></li>
+      <li><a href="#torah">Torah Classes</a></li>
+      <li><a href="#events">Événements</a></li>
+      <li><a href="#rabbin">Blog</a></li>
+      <li><a class="btn gold" href="#donate">Donate</a></li>
+    </ul>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="label">Hazak Lausanne</p>
+        <h1>Live your Jewish identity!</h1>
+        <p>In the spirit of Chabad and inspired by the Lubavitcher Rebbe's vision to reach every Jew with warmth and love, we offer a welcoming and inclusive space to connect with your roots and embrace your identity.</p>
+        <p>With thought-provoking classes and discussions, inspiring holiday celebrations and exciting activities for all ages, there's something for everyone at Hazak. Explore and celebrate our Jewish heritage together.</p>
+        <div class="actions"><a class="btn gold" href="#students">Students</a><a class="btn line" href="#contact">Contact</a></div>
+      </div>
+      <div class="verse">
+        <p class="he" lang="he">"אִישׁ אֶת-רֵעֵהוּ, יַעְזֹרוּ; וּלְאָחִיו, יֹאמַר חֲזָק"</p>
+        <p class="fr">L'un prête assistance à l'autre et chacun dit à son frère : « HAZAK ! »</p>
+        <small>Isaïe, chapitre 41, 6</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="label">About</p><h2>Qui sommes-nous ?</h2></div></div>
+      <div class="grid">
+        <div class="panel"><span class="lang">FR</span><h3>Le but de HAZAK</h3><p>Le but de HAZAK est de rendre le judaïsme accessible à tous. Située à Lausanne, l'organisation Hazak s'efforce de faire que les étudiants se sentent les bienvenus et fassent partie de la communauté. Avec des efforts de sensibilisation, les juifs d'âge et de type différents peuvent tous se retrouver en HAZAK.</p></div>
+        <div class="panel"><span class="lang">EN</span><h3>Mission Statement</h3><p>Hazak, inspired by the Lubavitcher Rebbe and in the Chabad approach, is dedicated to providing a positive and enriching experience for every Jew seeking to connect with their heritage. Our mission is to empower individuals by sharing the knowledge and information that rightfully belongs to them, making the timeless wisdom of the Torah accessible and meaningful to all.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="students" id="students">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="label">Students</p><h2>Pour les étudiants juifs</h2></div><p>HAZAK t'accompagne tout au long de tes études et ton passage à Lausanne : de l'aide à la recherche d'un logement aux repas, en passant par les Shabbat To-Go, cours de Torah, activités… HAZAK est votre foyer juif, loin de chez vous.</p></div>
+      <p class="quote">« Tu es étudiant dans la région lémanique, nous sommes là pour t'accompagner dans tes études. »</p>
+      <div class="srv">
+        <div class="card"><span class="k">Lausanne et environs</span><h3>Aide au logement</h3><p>Vous arrivez à Lausanne et êtes à la recherche d'un logement ? Contactez-nous et nous ferons de notre mieux pour vous trouver une solution.</p><span class="em">+41 78 203 27 70</span></div>
+        <div class="card"><span class="k">EPFL · Unil</span><h3>Espace de travail</h3><p>Nous mettons à disposition une salle d'étude durant la journée. Contactez-nous si vous avez besoin d'un endroit pour réviser au calme.</p><span class="em">info@hazak.ch</span></div>
+        <div class="card"><span class="k">Vendredi soir</span><h3>Repas de Shabbat</h3><p>Nous vous accueillons pour le repas de Chabbat le vendredi soir. Venez découvrir les saveurs de Chabbat ainsi que ses chants. Sur inscription.</p><span class="em">+41 78 203 27 70</span></div>
+        <div class="card"><span class="k">Cours &amp; rencontre</span><h3>Vivre avec intégrité</h3><p>Vivre en toute intégrité : naviguer quotidiennement au travers de dilemmes éthiques.</p><span class="em">info@hazak.ch</span></div>
+      </div>
+      <div class="togo">
+        <div class="card"><img src="img/shabbat-to-go.png" alt="Shabbat to go"><div><h3>Shabbat To-Go</h3><p>Pour les étudiants et jeunes professionnels juifs de Lausanne. Commande avant jeudi 22h00.</p></div></div>
+        <div class="card"><img src="img/lunch-learn.png" alt="Hazak Lunch &amp; Learn"><div><h3>Lunch &amp; Learn</h3><p>Un message de Torah est partagé tous les jours lors du lunch.</p></div></div>
+        <div class="card"><img src="img/logo.png" alt="Hazak" style="background:#fff"><div><h3>Repas To-Go</h3><p>Des repas cacher to go, livraison possible sur commande.</p></div></div>
+      </div>
+      <p style="margin:26px 0 0">« Contacte-nous dès à présent, nous serons ravis de t'accompagner. » <a class="btn" style="margin-left:8px" href="#contact">Contact</a></p>
+    </div>
+  </section>
+
+  <section class="torah" id="torah">
+    <div class="wrap grid">
+      <div class="pics"><img src="img/torah-study.jpg" alt="Affiche Weekly Torah Study" loading="lazy"><img src="img/beth-hamidrash.jpg" alt="Affiche Cours exceptionnel et soft opening du Beth Hamidrash de Lausanne" loading="lazy"></div>
+      <div>
+        <div class="academy"><img src="img/torah-academy.png" alt="Hazak Torah Academy"><p class="label">Hazak Torah Academy</p></div>
+        <h2>Torah Classes</h2>
+        <p>Weekly Torah Study, en présentiel et par Zoom, cours exceptionnels au Beth Hamidrash de Lausanne, Lunch &amp; Learn et conférences : making the timeless wisdom of the Torah accessible and meaningful to all.</p>
+        <a class="btn" href="#contact">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="events" id="events">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="label">Événements</p><h2>Fêtes et activités</h2></div><p>Hanoucca, Pourim, Pessa'h, Lag Baomer, Chavouot, soirées féminines, activités pour les teens et day camp : quelques-unes de nos affiches.</p></div>
+      <div class="flyers"><figure><img src="img/chanukah-party.jpg" alt="Affiche : Pre-Chanukah Party · for the whole family" loading="lazy"><figcaption>Pre-Chanukah Party · for the whole family</figcaption></figure><figure><img src="img/allumage.jpg" alt="Affiche : Grand allumage public de Hanoucca · Esplanade de Montbenon" loading="lazy"><figcaption>Grand allumage public de Hanoucca · Esplanade de Montbenon</figcaption></figure><figure><img src="img/menorah-lighting.jpg" alt="Affiche : Annual Menorah Lighting · Esplanade de Montbenon" loading="lazy"><figcaption>Annual Menorah Lighting · Esplanade de Montbenon</figcaption></figure><figure><img src="img/hanoucca-party.jpg" alt="Affiche : Hanoucca Party · Students & young professionals" loading="lazy"><figcaption>Hanoucca Party · Students & young professionals</figcaption></figure><figure><img src="img/raclette.jpg" alt="Affiche : Pré-Hanoucca Raclette Party · Chalet Hazak" loading="lazy"><figcaption>Pré-Hanoucca Raclette Party · Chalet Hazak</figcaption></figure><figure><img src="img/hamentash.jpg" alt="Affiche : Family Hamentash Bake" loading="lazy"><figcaption>Family Hamentash Bake</figcaption></figure><figure><img src="img/pourim-royal.jpg" alt="Affiche : Chabbat Pourim Royal · Villa Hazak" loading="lazy"><figcaption>Chabbat Pourim Royal · Villa Hazak</figcaption></figure><figure><img src="img/seder-2025.jpg" alt="Affiche : Pessa'h 2025 · Seder pour tous" loading="lazy"><figcaption>Pessa'h 2025 · Seder pour tous</figcaption></figure><figure><img src="img/matsa-bakery.jpg" alt="Affiche : Matsa Bakery · Villa Hazak" loading="lazy"><figcaption>Matsa Bakery · Villa Hazak</figcaption></figure><figure><img src="img/bbq-lag-baomer.jpg" alt="Affiche : BBQ de Lag Baomer · Villa Hazak" loading="lazy"><figcaption>BBQ de Lag Baomer · Villa Hazak</figcaption></figure><figure><img src="img/randonnee.jpg" alt="Affiche : Lag Baomer pour tous · Sortie randonnée au Creux du Van" loading="lazy"><figcaption>Lag Baomer pour tous · Sortie randonnée au Creux du Van</figcaption></figure><figure><img src="img/chavouot.jpg" alt="Affiche : Chavouot Garden Party pour tous" loading="lazy"><figcaption>Chavouot Garden Party pour tous</figcaption></figure><figure><img src="img/cheesecake.jpg" alt="Affiche : Teens · The Cheesecake Factory" loading="lazy"><figcaption>Teens · The Cheesecake Factory</figcaption></figure><figure><img src="img/fruit-ninja.jpg" alt="Affiche : Hazak Teens · Fruit Ninja Tu Bishvat" loading="lazy"><figcaption>Hazak Teens · Fruit Ninja Tu Bishvat</figcaption></figure><figure><img src="img/day-camp.jpg" alt="Affiche : Jewish Day Camp Lausanne" loading="lazy"><figcaption>Jewish Day Camp Lausanne</figcaption></figure><figure><img src="img/challa-bake.jpg" alt="Affiche : Soirée féminine · Challa Bake" loading="lazy"><figcaption>Soirée féminine · Challa Bake</figcaption></figure><figure><img src="img/flower-pounding.jpg" alt="Affiche : Soirée féminine · Flower Pounding" loading="lazy"><figcaption>Soirée féminine · Flower Pounding</figcaption></figure><figure><img src="img/chabbat-hazak.jpg" alt="Affiche : Chabbat Hazak · Students" loading="lazy"><figcaption>Chabbat Hazak · Students</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="rabbi" id="rabbin">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="label">Blog</p><h2>Le mot du Rabbin</h2></div></div>
+      <div class="grid">
+        <article class="letter">
+          <img class="matzah" src="img/shmurah-matzah.jpg" alt="Shmurah Matzah Campaign" loading="lazy">
+          <h3>A Case for Shmurah Matzah</h3>
+          <p class="from">from the desk of Rabbi M. Mendel Naparstek</p>
+          <p>Dear Friends,</p>
+          <p>As we approach this year's Passover, we are reminded that this holiday is not just a time for remembrance, but a time for deep, visceral experience. Through the seder, we immerse ourselves in the story of the Exodus, reliving the journey of our ancestors as if it were our own.</p>
+          <details><summary>Read more</summary>
+            <p>Our sages say that one who is meticulous with the customs of Pessa'h will be protected from sin for the rest of the year. It is for this reason that many prefer to use shmura matzah; the "rolex" of all matzah. The term "shmura" means "watched" in Hebrew, referring to the careful supervision of the entire process, from harvesting the wheat to baking the matza, to ensure that it does not become leavened.</p>
+            <p>If you would like to receive shmurah matzah for your seder, please do not hesitate to reach out to us. We are happy to assist you in obtaining this special matzah to enhance your Passover experience.</p>
+          </details>
+          <p class="sig">Warmly,<br>Rabbi M. Mendel Naparstek</p>
+        </article>
+        <div class="posts">
+          <div class="post"><h4>Sur la célébration de la liberté</h4><p>La Pessah, également connue sous le nom de Saison de la liberté dans la liturgie, est un moment où nous nous souvenons de l'esclavage de…</p><small>Mushky Naparstek · 7 avr. 2025 · 2 min de lecture</small></div>
+          <div class="post"><h4>Le nettoyage de printemps de nos âmes</h4><p>Alors que nous nettoyons frénétiquement pour Pessa'h, je suggère humblement que nous ne négligions pas le nettoyage de printemps de nos…</p><small>Mushky Naparstek · 7 avr. 2025 · 1 min de lecture</small></div>
+          <div class="post"><h4>Un cas pour la matzah shmurah</h4><p>Chers amis, à l'approche de la Pessah de cette année, nous nous rappelons que cette fête n'est pas seulement un moment de commémoration…</p><small>Mushky Naparstek · 7 avr. 2025 · 2 min de lecture</small></div>
+          <div class="panel"><h3 style="font-size:1.3rem">The Full Story</h3><p style="margin:0">Rabbi Mendel Naparstek was born and raised in Paris, France. His grandfather Rav Hillel Pevzner of blessed memory spearheaded the first Jewish schools in Paris with determination and zeal, and it is with this same energy that Rabbi Naparstek dedicates his life to helping others. Rabbi Mendel received his Rabbinical ordination in 2007.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="give" id="donate">
+    <div class="wrap grid">
+      <div>
+        <p class="label">Donate</p>
+        <h2>Support Hazak</h2>
+        <p>Le succès des activités de HAZAK est possible grâce à la générosité de gens comme vous.</p>
+        <p>Votre soutien est vital pour notre mission à HAZAK et nous vous sommes reconnaissants pour toute contribution.</p>
+      </div>
+      <div class="bank">
+        <div><b>IBAN</b><span>CH97 0900 0000 1558 9553 9</span></div>
+        <div><b>CCP</b><span>15-589553-9</span></div>
+        <div><b>TWINT</b><span>+41 78 203 27 70</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="label">Contact</p><h2>Contact Hazak</h2></div></div>
+      <div class="grid">
+        <div class="card"><b>Director</b><p>Rabbi Menachem Mendel Naparstek</p></div>
+        <div class="card"><b>Téléphone &amp; e-mail</b><p><a href="tel:+41782032770">+41 78 203 27 70</a></p><p><a href="mailto:info@hazak.ch">info@hazak.ch</a></p></div>
+        <div class="card"><b>Follow us</b><p><a href="https://www.instagram.com/hazaklausanne" target="_blank" rel="noopener">Instagram @hazaklausanne</a></p><p><a href="https://www.instagram.com/hazakoncampus" target="_blank" rel="noopener">Instagram @hazakoncampus</a></p><p><a href="https://www.facebook.com/hazak.ch" target="_blank" rel="noopener">Facebook</a></p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <p>Hazak Lausanne - Vaud · info@hazak.ch · +41 78 203 27 70</p>
+    <p class="credit">© Hazak · Site réalisé par <a href="https://opteamize.ch">Opteamize</a></p>
+  </div>
+</footer>
+</body>
+</html>
